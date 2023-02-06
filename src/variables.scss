@@ -1,0 +1,66 @@
+/* Variables and mixins declared here will be available in all other SCSS files */
+@import 'bootstrap/scss/functions'; /* Override Bootstrap's variables here */
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$white: #fff !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$primary: #0d6efd !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px //   xl: 1140px,
+  //   xxl: 1320px,
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px // xl: 1200px,
+  // xxl: 1400px,
+);
+// $component-active-color:      #333333;
+// $component-active-bg:         $gray-100 !default;
+// $border-color:                $gray-100 !default;
+$link-decoration: none !default;
+
+$body-bg: $white !default;
+$body-color: $gray-700 !default;
+$component-active-color: $gray-800;
+$component-active-bg: $gray-200;
+$form-range-thumb-bg: $primary;
+$form-check-input-checked-bg-color: $primary;
+
+$variable-prefix: bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix: $variable-prefix !default;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+// scss-docs-end spacer-variables-maps
+
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-shade-percentage: 15% !default;
+$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration: null !default;
+
+$paragraph-margin-bottom: 0.5rem !default;
+
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
