@@ -5,7 +5,7 @@
   import Router, { push } from "svelte-spa-router";
   import routes from "./routes";
   export let label = "Nwp-App-3";
-  export let setPage;
+  let setPage = () => console.log("Set Page Function disabled");
   const navData = [
     { path: "/", name: "Final-Space Api" },
     {
