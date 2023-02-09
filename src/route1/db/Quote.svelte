@@ -7,7 +7,7 @@
   export let d = {};
   
 </script>
-
+{#if d.quote}
 {#if !detail}
   <!-- List Item { id, quote, by, character, image } -->
 
@@ -35,4 +35,5 @@
   <div class="display-1 text-danger">
     No Option
   </div>
+{/if}
 {/if}

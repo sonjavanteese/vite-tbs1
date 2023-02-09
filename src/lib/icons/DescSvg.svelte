@@ -1,0 +1,9 @@
+<script>
+    export let size = "20px";
+    $: style = `width:${size};height:${size}`;
+</script>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" {style} viewBox="0 0 24 24">
+<title>desc</title>
+<path d="M3.984 3h16.031v2.016h-16.031v-2.016zM8.016 11.016l3.984-4.031 3.984 4.031h-3v9.984h-1.969v-9.984h-3z"></path>
+</svg>

@@ -9,9 +9,9 @@
   export let d = {};
   
 </script>
-
+{#if d.type}
 {#if !detail}
-  <!-- List Item -->
+  <!-- List Item {id, name, type, inhabitants, notable_residents, img_url} -->
   <div class="d-flex w-100 justify-content-between align-items-start">
     <h4 class="mb-1">
       {d.name ? d.name : ''} 
@@ -29,4 +29,5 @@
     </div>
   </div>
   <JsonPanel d={d} />
+{/if}
 {/if}

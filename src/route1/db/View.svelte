@@ -12,6 +12,7 @@
 
 {#if !detail}
   <!-- List Item -->
+  <div>View</div>
   <div class="d-flex w-100 justify-content-between align-items-start">
     <h4 class="mb-1">
       {d.name ? d.name : ''} 
@@ -22,6 +23,7 @@
   <!-- Details Item -->
   <div class="p-4 my-2 border">
     <div class="d-flex flex-column">
+      <div>View</div>
       <div class="d-flex w-100 justify-content-between align-items-start">
         <h4 class="mb-1">{d.name}</h4>
         <small class="text-muted">{d.id}</small>
