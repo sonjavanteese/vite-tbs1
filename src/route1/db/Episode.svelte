@@ -34,7 +34,7 @@
   </article> 
 {:else}
   <!-- Detail Item {id, name, air_date, director, writer, characters, img_url} -->
-  <div class="d-flex w-100 justify-content-between align-items-start">
+  <div class="d-flex w-100 justify-content-between align-items-start mb-4">
     <article class="d-flex flex-column ps-0" data-id={d.id} on:click={handleClick}>
       <h1 class="fs-1 mb-3">
         <span class="text-muted" style="opacity: 0.5;"><Fa icon={faTv} fw /></span>

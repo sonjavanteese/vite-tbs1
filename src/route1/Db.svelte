@@ -33,11 +33,11 @@
       <h2 class="display-5 fw-bold mt-2 mb-4 text-muted">
         <span class="text-capitalize">{params.page ? params.page : 'Error Params Page'}</span>
       </h2>
-      {#each apiData as { path, name }}
+      {#each apiData as { path, name, page }}
         <a
           class="btn btn-outline-info d-inline-block me-1 mb-1"
-          class:active={path === params.page}
-          href="#/db/{path}/">{name}</a>
+          class:active={page === params.page}
+          href="#{path}">{name}</a>
       {/each}
     </div>
   </header>

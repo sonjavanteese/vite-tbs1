@@ -29,7 +29,7 @@
 {:else}
   <!-- Details Item { id, name, status, species, gender, hair, alias, origin, abilities, img_url } -->
   <div class="d-flex w-100 justify-content-between align-items-start">
-    <article class="d-flex flex-column ps-0" data-id={d.id}>
+    <article class="d-flex flex-column ps-0 mb-5" data-id={d.id}>
       <h1 class="fs-1 mb-3" title="Name">
         <span class="text-secondary" style="opacity: 0.5;"><Fa icon={faUserFriends} fw /></span>
         <span class="text-primary">{d.name}</span>

@@ -1,43 +1,9 @@
 <script>
     import Collapse from "../lib/bs/Collapse.svelte";
     import DocsBs from '../lib/bs/DocsBs.md';
+    import { apiData } from './db';
     export let label = "Nwp-App";
-    const navData = [
-        { path: "/", name: "Final-Space Api" },
-        {
-        id: 0,
-        name: "Episode",
-        path: "/db/episode",
-        url: "https://finalspaceapi.com/api/v0/episode/",
-        templ: 1,
-        detail: false
-        },
-        {
-        id: 1,
-        name: "Character",
-        path: "/db/character",
-        url: "https://finalspaceapi.com/api/v0/character/",
-        templ: 2,
-        detail: false
-        },
-        {
-        id: 2,
-        name: "Location",
-        path: "/db/location",
-        url: "https://finalspaceapi.com/api/v0/location/",
-        templ: 3,
-        detail: false
-        },
-        {
-        id: 3,
-        name: "Quote",
-        path: "/db/quote",
-        url: "https://finalspaceapi.com/api/v0/quote/",
-        templ: 4,
-        detail: false
-        },
-        { path: "/settings", name: "Settings" },
-    ];
+    const navData = apiData;
 </script>
 
 <div class="container-fluid">
